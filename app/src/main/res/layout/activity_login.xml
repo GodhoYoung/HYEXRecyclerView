@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#da02299f"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    tools:context=".login.LoginActivity">
+
+    <ImageView
+        android:id="@+id/iv_Image_log"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+
+    <EditText
+        android:id="@+id/et_email_log"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:hint="Email or ID"
+        android:lines="1"
+        android:background="@drawable/hyrect"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="10dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+        />
+    <EditText
+        android:id="@+id/et_password_log"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/hyrect"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:lines="1"
+        android:hint="Password"
+        android:paddingLeft="10dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+        />
+
+    <Button
+        android:id="@+id/btnLogin_log"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Button"
+        android:background="@drawable/hyrect"
+        />
+    <EditText
+        android:id="@+id/et_register_log"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="register"
+        android:textColor="#fff"
+        android:layout_gravity="center"
+        android:editable="false"
+        android:focusable="false"
+        android:clickable="true"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Widget.Button"
+
+        />
+
+
+</LinearLayout>

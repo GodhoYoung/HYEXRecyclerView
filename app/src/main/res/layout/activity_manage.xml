@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#d1d1d1"
+    tools:context=".management.ManageActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+        android:textColor="#fff"
+        android:text="회원 관리"
+        android:padding="5dp"
+        android:gravity="center"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:padding="3dp"
+        >
+    <EditText
+        android:id="@+id/et_Search"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/btn_Search"
+        />
+        <Button
+            android:id="@+id/btn_Search"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/hyrect2"
+            android:textColor="#fff"
+            android:layout_margin="3dp"
+            android:text="Search"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/rv_ListManage"
+        android:layout_width="match_parent"
+        android:divider="#d1d1d1"
+        android:padding="10dp"
+        android:dividerHeight="5dp"
+        android:scrollbars="vertical"
+        android:layout_height="match_parent"></ListView>
+</LinearLayout>

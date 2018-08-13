@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".server.ServerActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btn_serverback"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="back"
+            android:background="@color/colorPrimaryDark"
+            />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Server"
+        android:layout_toRightOf="@+id/btn_serverback"
+        android:textColor="#fff"
+        android:layout_marginRight="50dp"
+        android:gravity="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+        />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_ListServer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linear2"
+        android:padding="10dp"
+        android:scrollbars="vertical"
+        ></android.support.v7.widget.RecyclerView>
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            >
+
+        <Button
+            android:layout_margin="10dp"
+            android:id="@+id/btn_server_add"
+            android:text=" 서버 연결 "
+            android:background="@drawable/hyrect"
+            android:textColor="#fff"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+
+            />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
